@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresentaBlockEmoji</title>
+    <script src="../dist/presenta-block-emoji.min.js"></script>
+
+    <style>
+        #wrapper{
+            width: 700px;
+            height: 200px;
+            resize: both;
+            overflow: hidden;
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper"></div>
+
+    <script>
+        var block = {
+            type: 'emoji',
+            emoji: '😹'
+        }
+        new PresentaBlockEmoji(document.querySelector('#wrapper'), block)
+    </script>
+</body>
+</html>
